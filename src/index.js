@@ -15,6 +15,10 @@ app.use(cors(corsOptions));
 app.use(express.json())
 app.use('/notes', notesRoutes);
 
+app.get('/', (res: Request<P, ResBody, ReqBody, ReqQuery, Locals>, res: Response<ResBody, Locals>) => {
+}
+
+
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
