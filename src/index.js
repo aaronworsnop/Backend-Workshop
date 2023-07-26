@@ -5,7 +5,7 @@ const port = 8000;
 const connectDb = require('./mongoDb/db');
 const notesRoutes = require('./routes/notes')
 
-//connectDb();
+connectDb();
 const corsOptions = {
     origin: '*',
     optionsSuccessStatus: 200
